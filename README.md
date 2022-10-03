@@ -1,3 +1,3 @@
-### Fun with triangles
+### Profit or loss calculator (stocks)
 
-This app helps you calculate different properties of triangle and also has a quiz. This app is made with VanillaJS, HTML, CSS.
+This app tells the user how much profit or loss he/she is making. Made with VanillaJS, HTML, CSS This app tells the user how much profit or loss he/she is making. Made with VanillaJS, HTML, CSS
