@@ -10,8 +10,17 @@ function clickhandler() {
   const profit = currentPrice.value - intialPrice.value;
   const profitPercnt = (profit / (intialPrice.value * quantity.value)) * 100;
   const loss = intialPrice.value - currentPrice.value;
-
-  if (currentTotalPrice > intialTotalPrice) {
+  if (
+    intialPrice.value <= 0 ||
+    currentPrice.value <= 0 ||
+    quantity.value <= 0
+  ) {
+    output.innerHTML = "Value entered must be greater than 0!";
+  } else if (
+    currentTotalPrice > intialTotalPrice &&
+    intialPrice.value > 0 &&
+    currentPrice.value > 0
+  ) {
     output.innerHTML =
       "Your total profit is " +
       profit +
