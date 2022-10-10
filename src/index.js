@@ -7,9 +7,12 @@ var btn = document.querySelector("#btn");
 function clickhandler() {
   const intialTotalPrice = intialPrice.value * quantity.value;
   const currentTotalPrice = currentPrice.value * quantity.value;
-  const profit = currentPrice.value - intialPrice.value;
-  const profitPercnt = (profit / (intialPrice.value * quantity.value)) * 100;
-  const loss = intialPrice.value - currentPrice.value;
+  // const profit = currentPrice.value - intialPrice.value;
+  // const profitPercnt = (profit / (intialPrice.value * quantity.value)) * 100;
+  // const loss = intialPrice.value - currentPrice.value;
+  const profit = currentTotalPrice - intialTotalPrice;
+  const profitPercnt = (profit / intialTotalPrice) * 100;
+  const loss = intialTotalPrice - currentTotalPrice;
   if (
     intialPrice.value <= 0 ||
     currentPrice.value <= 0 ||
